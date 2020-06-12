@@ -1,3 +1,4 @@
+/*5.Print entire array each element separated by space.*/
 #include<stdio.h>
 int main()
 {
