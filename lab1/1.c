@@ -1,3 +1,4 @@
+/*1.Scan N(take input N from user)values from user into an array.*/
 #include<stdio.h>
 int main()
 {
