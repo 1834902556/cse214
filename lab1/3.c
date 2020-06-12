@@ -1,3 +1,4 @@
+/*3.Scan values from user into an array until user input is 0(Zero).*/
 #include<stdio.h>
 int main()
 {
