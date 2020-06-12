@@ -1,4 +1,4 @@
- /*Print entire array each element in newline.*/
+/*4.Print entire array each element in newline.*/
 #include<stdio.h>
 int main()
 {
