@@ -5,7 +5,7 @@
 * Array Accessing
 * Array I/O
 ## [Lab Assignment 2](lab2)
-* Array Declaration
+* 1D Array Declaration
 * Array Update
 * Array Search
 * Array Delete
@@ -25,17 +25,17 @@
 * Cyclically Permute
 ## [Lab Assignment 5 (Array Operation using Pointer)](lab5)
 * Array Operation Using Pointer
-  -Array Declaration
-  - Array Initialization 
-  - Array Accessing 
-  - Array I/O 
-  - Merge
-  - Compare
-  - Reverse
-  - Maximum
-  - Minimum
-  - Merge by Sorting
-  - Summation
-  - Split
-  - Updating Index
-  - Cycally Permute
+  * Array Declaration
+  * Array Initialization 
+  * Array Accessing 
+  * Array I/O 
+  * Merge
+  * Compare
+  * Reverse
+  * Maximum
+  * Minimum
+  * Merge by Sorting
+  * Summation
+  * Split
+  * Updating Index
+  * Cycally Permute
