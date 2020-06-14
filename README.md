@@ -23,7 +23,7 @@
 * Array Merge
 * Spilt
 * Cyclically Permute
-## [Lab Assignment 5 (Array Operation using Pointer)](lab5)
+## [Lab Assignment 5 ](lab5)
 * Array Operation Using Pointer
   * Array Declaration
   * Array Initialization 
