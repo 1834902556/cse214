@@ -1,92 +1,91 @@
-## [Variable Decleration](../lab3/7.c)
+## [Copy an Array Into Another Array](../lab4/1.c)
 ```c
-int i, max, min, max_2nd, min_2nd;
-double sum = 0, avg = 0, variance = 0;
-int size = 10;
-```
-## [Array Decleration or Initialization](../lab3/1.c)
-```c
-int array[100] = {73, 80, 8, 40, 33, 57, 70, 92, 99, 85};
-```
-
-## [Find Maximum](../lab3/1.c)
-```c
-max = array[0]; // Lets Take any one value from given array as a maximum
 for(i=0; i<size; i++)
     {
-        if(array[i]>max) // Any index value are greater from maximum
-            max = array[i];
+        tag = array1[i];
+        array2[i] = tag;
     }
 ```
 
-## [Find Minimum](../lab3/2.c)
+## [Reverse an Array and Store Into Another Array](../lab4/2.c)
 ```c
-min = array[0]; // Lets Take any one value from given array as a minimum
-for(i=0; i<size; i++)
+for(i=0; i<=size; i++)
     {
-        if(array[i]>max)  
-            if(array[i]<min) // Any index value are less then from maximum
-                min = array[i];
+        tag = array1[size-i];
+        array2[i-1] = tag;
     }
 ```
 
-## [Find Second Maximum](../lab3/3.c)
+## [Reverse an Array and Store Into the Same Array](../lab4/3.c)
 ```c
-max = array[0];
+int tag = 0; // Where hold the value of array
+for(i=size-1, j=0; j<i; i--, j++){
+        tag = array[j];
+        array[j] = array[i];
+        array[i] = tag;
+    }
+```
+
+## [Array Compare](../lab4/4.c)
+```c
 for(i=0; i<size; i++)
     {
-        if(array[i]>max)
+        if(array1[i]==array2[i]) // Check equality between both array
+            same++;
+    }
+
+if(same==size)                              // If equal to the size then print same
+        printf("\n\nTwo array are same\n");
+else                                        // If not equal to the size then print not same
+        printf("\n\nTwo array are not same\n");
+```
+
+## [Array Merge](../lab4/5.c)
+```c
+size = size1 + size2; // Summation of two array size
+
+for(i=size1, j=0; i<=size; i++,j++)
+        array1[i]=array2[j];
+```
+
+## [Merge the Elements of Two Sorted Array](../lab4/6.c)
+```c
+for(i=0; i<size; i++)
+    {
+        for(j=i+1; j<size; j++)
         {
-            max_2nd = max;
-            max = array[i];
+            if(array1[i]>array1[j]) // Sorting the array after merging
+            {
+                tag = array1[i];
+                array1[i] = array1[j];
+                array1[j] = tag;
+            }
         }
-        else if(array[i]>max_2nd && array[i]<max)
-            max_2nd = array[i];
     }
 ```
 
-## [Find Second Minimum](../lab3/4.c)
+## [Split an Array Into Two Different Arrays](../lab4/7.c)
 ```c
-min = min_2nd = array[0];
+scanf("%d",&K); // Here, K is the position of the element where to split the array
 for(i=0; i<size; i++)
     {
-        if(array[i]<min)
+        if(i<K)
         {
-            min_2nd = min;
-            min = array[i];
+            array1[i] = array[i]; // Copying array to another array
+            size1++; // Count the size of array1
         }
-        else if(array[i]<min_2nd && array[i]!=min)
-            min_2nd = array[i];
+        else
+        {
+            array2[j++] = array[i]; // Copying array to another array
+            size2++; // Count the size of array2
+        }
     }
 ```
 
-## [Summation of Given Array](../lab3/5.c)
+## [Cyclically Permute](../lab4/8.c)
 ```c
-for(i=0; i<size; i++)
-        sum += array[i]; // Adds all values in given array
+array[size] = array[0]; // First value store into to the 11th position
+
+for (i=0; i<size; i++)
+        array[i] = array[i+1]; // Shift left the array elements
 ```
-
-## [Average of Given Array](../lab3/6.c)
-```c
-for(i=0; i<size; i++)
-        sum += array[i];
-    avg = sum/size; // Adds all values and divides by array size for average
-```
-
-## [Calculate Standard Deviation (For Non-Grouped Data)](../lab3/7.c)
-```c
-for(i=0; i<size; i++)
-        variance += pow(array[i]-avg,2); // For each number: Subtract the Mean and square the result 
-
-variance = sqrt(variance/10); // 
-```
-
-## [First 92 Fibonacci Numbers](../lab3/8.c)
-```c
-array[0] = 0;
-array[1] = 1;
-
-for(i=2; i<size; i++)
-        array[i] = array[i-1] + array[i-2]; // The sum of the two preceding numbers 
-```
-
