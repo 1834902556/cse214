@@ -1,91 +1,96 @@
 ## [Copy an Array Into Another Array](../lab4/1.c)
 ```c
-for(i=0; i<size; i++)
+    for(i = 0; i < size; i++)
     {
-        tag = array1[i];
-        array2[i] = tag;
+        arrB[i] = arrA[i];
     }
 ```
 
 ## [Reverse an Array and Store Into Another Array](../lab4/2.c)
 ```c
-for(i=0; i<=size; i++)
+    for(i = 0, j = size - 1; i <= size; i++, j--)
     {
-        tag = array1[size-i];
-        array2[i-1] = tag;
+        arrB[i] = arrA[j];
     }
 ```
 
 ## [Reverse an Array and Store Into the Same Array](../lab4/3.c)
 ```c
-int tag = 0; // Where hold the value of array
-for(i=size-1, j=0; j<i; i--, j++){
-        tag = array[j];
-        array[j] = array[i];
-        array[i] = tag;
+    for(i = 0, j = size - 1; i < size/2; i++, j--)
+    {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 ```
 
 ## [Array Compare](../lab4/4.c)
 ```c
-for(i=0; i<size; i++)
+    for(i = 0; i < size; i++)
     {
-        if(array1[i]==array2[i]) // Check equality between both array
-            same++;
+        if(arrA[i] == arrB[i])
+        {
+            count++;
+        }
     }
-
-if(same==size)                              // If equal to the size then print same
-        printf("\n\nTwo array are same\n");
-else                                        // If not equal to the size then print not same
-        printf("\n\nTwo array are not same\n");
+    if(count == size)
+    {
+        printf("\nBoth arrays are same\n");
+    }
+    else
+    {
+        printf("\nBoth arrays aren't same\n");
+    }
 ```
 
 ## [Array Merge](../lab4/5.c)
 ```c
-size = size1 + size2; // Summation of two array size
-
-for(i=size1, j=0; i<=size; i++,j++)
-        array1[i]=array2[j];
+size = size1 + size2; 
+    for(i = 0; i < size_arrA; i++)
+    {
+        a[i] = arrA[i];
+    }
+     for(i = 0, j = size_arrA; i < size_arrB; i++,j--)
+     {
+         a[j] = arrB[i];
+     }
 ```
 
 ## [Merge the Elements of Two Sorted Array](../lab4/6.c)
 ```c
-for(i=0; i<size; i++)
+    for(i = 0; i < size_A; i++)
     {
-        for(j=i+1; j<size; j++)
-        {
-            if(array1[i]>array1[j]) // Sorting the array after merging
-            {
-                tag = array1[i];
-                array1[i] = array1[j];
-                array1[j] = tag;
-            }
-        }
+        M[i] = arrA[i];
+    }
+    for(i = 0, j = size_A; i < size_B; i++,j++)
+    {
+        M[j] = arrB[i];
     }
 ```
 
 ## [Split an Array Into Two Different Arrays](../lab4/7.c)
 ```c
-scanf("%d",&K); // Here, K is the position of the element where to split the array
-for(i=0; i<size; i++)
+scanf("%d",&K); 
+    for (i = 0; i < k; i++)
     {
-        if(i<K)
-        {
-            array1[i] = array[i]; // Copying array to another array
-            size1++; // Count the size of array1
-        }
-        else
-        {
-            array2[j++] = array[i]; // Copying array to another array
-            size2++; // Count the size of array2
-        }
+        arrB[i] = arrA[i];
+    }
+     for (i = 0; i < k; i++)
+    {
+        printf("%d ", arrB[i]);
+    }
+    printf("\n");
+    for (i = k; i < size; i++)
+    {
+        printf("%d ", arrA[i]);
     }
 ```
 
 ## [Cyclically Permute](../lab4/8.c)
-```c
-array[size] = array[0]; // First value store into to the 11th position
-
-for (i=0; i<size; i++)
-        array[i] = array[i+1]; // Shift left the array elements
+```c 
+    arr[size] = arr[0];
+    for (i = 0; i < size; i++)
+    {
+        arr[i] = arr[i+1];
+    }
 ```
