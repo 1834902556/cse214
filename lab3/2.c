@@ -9,6 +9,7 @@ int main ()
         i++;
     }
     size = i;
+    min = arr[0];
     for(i=0; i<size; i++){
         if(arr[i] < min){
             min = arr[i];
