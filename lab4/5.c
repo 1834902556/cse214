@@ -25,10 +25,7 @@ int main ()
      {
          a[j] = arrB[i];
      }
-    /*for(j = 0; j < size_arr; j++)
-    {
-        a[i++] = arr[j];
-    }*/
+
     for(i = 0; i < size_a; i++)
     {
         printf("%d ",a[i]);
