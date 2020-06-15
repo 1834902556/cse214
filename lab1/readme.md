@@ -1,15 +1,3 @@
-
-## [Variable Decleration](../lab1/6.c)
-```c
-int i;
-int p = 0, size = 10;
-```
-
-## [Array Decleration or Initialization](../lab1/4.c)
-```c
-int a[100] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
-```
-
 ## [Array Elements Insertion (User Input)](../lab1/1.c)
 ```c
 
