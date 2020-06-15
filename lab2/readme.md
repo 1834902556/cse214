@@ -1,8 +1,3 @@
-## [Array Decleration or Initialization](../lab2/2.c)
-```c
-int arr[20] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
-```
-
 ## [Print The Array Elements](../lab2/3.c)
 ```c
 
