@@ -39,3 +39,11 @@
   * Split
   * Updating Index
   * Cycally Permute
+  ## [Lab Assignment 6](lab6)
+ * Linked List Basic Operation [Single Way(Singly)Linked List]
+   * Create
+   * DEclare
+   * Initialize
+   * Access
+   * Traverse
+   * Output
