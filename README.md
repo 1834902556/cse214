@@ -48,7 +48,7 @@
    * Traverse
    * Output
     ## [Lab Assignment 7](lab7)
-    * Linked List Operations [Single Way(Singly)Linked List]
+  * Linked List Operations [Single Way(Singly)Linked List]
       * Create
       * Empty
       * Size
