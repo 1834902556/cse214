@@ -40,10 +40,21 @@
   * Updating Index
   * Cycally Permute
   ## [Lab Assignment 6](lab6)
- * Linked List Basic Operation [Single Way(Singly)Linked List]
+ * Linked List Basic Operations [Single Way(Singly)Linked List]
    * Create
    * DEclare
    * Initialize
    * Access
    * Traverse
    * Output
+    ## [Lab Assignment 7](lab7)
+    * Linked List Operations [Single Way(Singly)Linked List]
+      * Create
+      * Empty
+      * Size
+      * Front 
+      * Back
+      * Search
+      * Reverse
+      * Merge
+      
