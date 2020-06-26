@@ -47,8 +47,8 @@
    * Access
    * Traverse
    * Output
-    ## [Lab Assignment 7](lab7)
-  * Linked List Operations [Single Way(Singly)Linked List]
+  ## [Lab Assignment 7](lab7)
+ * Linked List Operations [Single Way(Singly)Linked List]
       * Create
       * Empty
       * Size
@@ -57,15 +57,16 @@
       * Search
       * Reverse
       * Merge
-     ## [Lab Assignment 7](lab7)
-   * Linked List Delete(pop) Operations [Single Way(Singly)Linked List]
+   ## [Lab Assignment 8](lab8)
+  * Linked List Delete(pop) Operations [Single Way(Singly)Linked List]
      * Delete Back
      * Delete Front
      * Delete Value
      * Delete At
      * Delete All/Clear
-     ## [Lab Assignment 7](lab7)
-   *  Linked List Insert(push) Operations [Single Way(Singly)Linked List]
+   
+   ## [Lab Assignment 9](lab9)
+   * Linked List Insert(push) Operations [Single Way(Singly)Linked List]
      * Insert Front
      * Insert Back
      * Insert At
