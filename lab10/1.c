@@ -90,11 +90,6 @@ void main()
     while(op != 7);
 }
 
-void size()
-{
-    printf("\n Queue size : %d", count);
-}
-
 void push(int value)
 {
     if (tail == NULL)
@@ -114,24 +109,6 @@ void push(int value)
         tail = temp;
     }
     count++;
-}
-
-void display()
-{
-    first = head;
-
-    if ((first == NULL) && (tail == NULL))
-    {
-        printf("Queue is empty");
-        return;
-    }
-    while (first != tail)
-    {
-        printf("%d ", first->value);
-        first = first->next;
-    }
-    if (first == tail)
-        printf("%d", first->value);
 }
 
 void pop()
@@ -178,6 +155,27 @@ void empty()
         printf("\n Empty Queue ");
     else
         printf("Queue is not empty");
+}
+void display()
+{
+    first = head;
 
+    if ((first == NULL) && (tail == NULL))
+    {
+        printf("Queue is empty");
+        return;
+    }
+    while (first != tail)
+    {
+        printf("%d ", first->value);
+        first = first->next;
+    }
+    if (first == tail)
+        printf("%d", first->value);
+}
+
+void size()
+{
+    printf("\n Queue size : %d", count);
 }
 
